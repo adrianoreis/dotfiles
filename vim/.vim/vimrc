@@ -1,4 +1,3 @@
-
 "set autoindent
 
 " Turn on line numbering. Turn it off with "set nonu" 
@@ -6,6 +5,9 @@ set number
 
 " Set syntax on
 syntax on
+
+"
+filetype plugin indent on
 
 " Case insensitive search
 set ic
@@ -22,12 +24,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-
-set nocompatible
-
 execute pathogen#infect()
 
-set runtimepath^=~/.vim/bundle/vim-erlang-runtime/
+"set runtimepath^=~/.vim/bundle/vim-erlang-runtime/
 
 set background=dark
 colorscheme solarized
@@ -35,6 +34,4 @@ colorscheme solarized
 set dictionary-=/usr/share/dict/words
 set dictionary+=/usr/share/dict/words
 
-" au BufNewFile *.erl 0r ~/.vim/skel/erl.skel | let IndentStyle = "erlang"
 au BufNewFile *.erl 0r ~/.vim/skel/erlang.skel 
-

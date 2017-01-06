@@ -1,0 +1,40 @@
+
+"set autoindent
+
+" Turn on line numbering. Turn it off with "set nonu" 
+set number
+
+" Set syntax on
+syntax on
+
+" Case insensitive search
+set ic
+
+" Higlhight search
+set hls
+
+" Wrap text instead of being on one line
+set lbr
+
+syntax enable
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+
+set nocompatible
+
+execute pathogen#infect()
+
+set runtimepath^=~/.vim/bundle/vim-erlang-runtime/
+
+set background=dark
+colorscheme solarized
+
+set dictionary-=/usr/share/dict/words
+set dictionary+=/usr/share/dict/words
+
+" au BufNewFile *.erl 0r ~/.vim/skel/erl.skel | let IndentStyle = "erlang"
+au BufNewFile *.erl 0r ~/.vim/skel/erlang.skel 
+

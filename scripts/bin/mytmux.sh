@@ -1,8 +1,12 @@
 #!/bin/bash
 
 sn=AR
+devdir=~/development/erlang/CPR
+if [ ! -d "$devdir" ]; then
+	mkdir -p "$devdir"
+fi
 
-cd ~/development/erlang
+cd "$devdir"
 
 tmux new-session -s "$sn" -n Bash -d
 tmux new-window -t "$sn:1" -n Vi vi

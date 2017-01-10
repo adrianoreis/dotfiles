@@ -10,7 +10,7 @@ syntax enable
 filetype plugin indent on
 
 " Case insensitive search
-set ic
+set noic
 
 " Higlhight search
 set hls

@@ -1,15 +1,14 @@
 [Configuration]
-FontName=DejaVu Sans Mono 12
-ColorForeground=#93a1a1
+ColorForeground=#839496
 ColorBackground=#002b36
 ColorCursor=#93a1a1
-ColorPalette=#002b36;#dc322f;#859900;#b58900;#268bd2;#6c71c4;#2aa198;#93a1a1;#657b83;#dc322f;#859900;#b58900;#268bd2;#6c71c4;#2aa198;#fdf6e3
+ColorPalette=#073642;#dc322f;#859900;#b58900;#268bd2;#d33682;#2aa198;#eee8d5;#002b36;#cb4b16;#586e75;#657b83;#839496;#6c71c4;#93a1a1;#fdf6e3
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
 MiscCursorBlinks=FALSE
 MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
-MiscDefaultGeometry=130x30
+MiscDefaultGeometry=80x24
 MiscInheritGeometry=FALSE
 MiscMenubarDefault=TRUE
 MiscMouseAutohide=FALSE
@@ -21,4 +20,16 @@ MiscTabCloseMiddleClick=TRUE
 MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
+ColorBold=#93a1a1
+ColorBoldUseDefault=FALSE
+MiscBellUrgent=FALSE
+MiscMouseWheelZoom=TRUE
+MiscMiddleClickOpensUri=FALSE
+MiscCopyOnSelect=FALSE
+MiscDefaultWorkingDir=
+MiscRewrapOnResize=TRUE
+MiscUseShiftArrowsToScroll=FALSE
+MiscSlimTabs=FALSE
+TabActivityColor=#dc322f
+FontName=DejaVu Sans Mono 14
 

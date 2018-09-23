@@ -8,7 +8,7 @@ MiscBell=FALSE
 MiscBordersDefault=TRUE
 MiscCursorBlinks=FALSE
 MiscCursorShape=TERMINAL_CURSOR_SHAPE_BLOCK
-MiscDefaultGeometry=80x24
+MiscDefaultGeometry=120x24
 MiscInheritGeometry=FALSE
 MiscMenubarDefault=TRUE
 MiscMouseAutohide=FALSE
@@ -31,5 +31,7 @@ MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=FALSE
 TabActivityColor=#dc322f
-FontName=DejaVu Sans Mono 14
+FontName=DejaVu Sans Mono 16
+ScrollingUnlimited=TRUE
+ScrollingOnOutput=FALSE
 

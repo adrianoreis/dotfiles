@@ -115,3 +115,11 @@ fi
 
 # setting vi mode
 set -o vi
+
+# maven path
+PATH=$PATH:/home/adriano/development/maven/bin
+export PATH
+
+# added by travis gem
+[ -f /home/adriano/.travis/travis.sh ] && source /home/adriano/.travis/travis.sh
+PATH=/home/adriano/.local/bin:/home/adriano/bin:/home/adriano/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/adriano/development/maven/bin

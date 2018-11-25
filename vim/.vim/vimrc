@@ -28,10 +28,19 @@ execute pathogen#infect()
 
 "set runtimepath^=~/.vim/bundle/vim-erlang-runtime/
 
-set background=dark
+set background=light
 colorscheme solarized
 
 set dictionary-=/usr/share/dict/words
 set dictionary+=/usr/share/dict/words
 
 au BufNewFile *.erl 0r ~/.vim/skel/erlang.skel 
+
+"http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
+let &t_SI.= "\e[6 q"
+let &t_SR.= "\e[4 q"
+let &t_EI.= "\e[2 q"
+
+"https://unix.stackexchange.com/questions/433273/changing-cursor-style-based-on-mode-in-both-zsh-and-vim
+autocmd VimEnter * silent exec "! echo -ne '\e[2 q'"
+autocmd VimLeave * silent exec "! echo -ne '\e[6 q'"

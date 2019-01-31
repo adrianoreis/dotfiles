@@ -101,6 +101,9 @@ source $ZSH/oh-my-zsh.sh
 # Enabling vi mode
 bindkey -v
 #
+# Save current input and run a command
+bindkey '^b'  push-line-or-edit
+#
 # Simple prompt
 DEFAULT_USER=`whoami`
 
@@ -149,3 +152,7 @@ make_beam
 # And at the start of each prompt
 autoload -U add-zsh-hook
 add-zsh-hook preexec make_beam
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

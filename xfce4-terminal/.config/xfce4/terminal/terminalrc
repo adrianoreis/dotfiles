@@ -31,9 +31,7 @@ MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=FALSE
 TabActivityColor=#dc322f
-FontName=Hack 15
-ScrollingUnlimited=TRUE
-ScrollingOnOutput=FALSE
 MiscShowRelaunchDialog=TRUE
 MiscNewTabAdjacent=FALSE
+FontName=Hack 14
 

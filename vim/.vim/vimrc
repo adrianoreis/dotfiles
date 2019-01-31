@@ -15,6 +15,9 @@ set noic
 " Higlhight search
 set hls
 
+" Incremental search
+set incsearch
+
 " Wrap text instead of being on one line
 set lbr
 
@@ -44,3 +47,10 @@ let &t_EI.= "\e[2 q"
 "https://unix.stackexchange.com/questions/433273/changing-cursor-style-based-on-mode-in-both-zsh-and-vim
 autocmd VimEnter * silent exec "! echo -ne '\e[2 q'"
 autocmd VimLeave * silent exec "! echo -ne '\e[6 q'"
+
+"vim-pandoc
+let maplocalleader =  "\<Space>"
+let g:pandoc#command#autoexec_on_writes=1
+let g:pandoc#command#autoexec_command="Pandoc! pdf"
+let g:pandoc#command#latex_engine="xelatex"
+"let g:pandoc#command#latex_engine="pdflatex"

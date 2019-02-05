@@ -153,6 +153,19 @@ make_beam
 autoload -U add-zsh-hook
 add-zsh-hook preexec make_beam
 
+#https://unix.stackexchange.com/questions/110869/how-can-i-configure-zshs-vi-mode-to-persist-the-state-between-commands
+#puts the line editor in vi command mode
+accept-line() { 
+  prev_mode=$KEYMAP; zle .accept-line 
+}
+
+zle-line-init() { 
+  zle -K ${prev_mode:-viins} 
+}
+
+zle -N accept-line
+zle -N zle-line-init
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
